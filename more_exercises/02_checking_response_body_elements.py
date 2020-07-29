@@ -34,11 +34,9 @@ def test_get_data_for_us_zip_90210_check_first_place_has_latitude_and_longitude(
     pass
 
 
-# Exercise 2.4
-# Perform a GET call to https://restful-booker.herokuapp.com/booking
+# Exercise 2.5
+# Perform a GET call to http://api.zippopotam.us/de/24848
 # Extract the JSON body from the response
-# Assert that the list of booking IDs contains more than 3 elements
-def test_get_all_bookings_check_number_of_bookings_larger_than_3():
-    response = requests.get('https://restful-booker.herokuapp.com/booking')
-    response_body = response.json()
-    assert len(response_body) > 3
+# Assert that the list of places contains exactly 4 elements
+def test_get_data_for_de_zip_24848_check_number_of_places_equals_4():
+    pass
