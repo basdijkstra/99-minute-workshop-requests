@@ -12,8 +12,8 @@ def test_get_booking_with_id_7_check_firstname_element_exists():
 # Exercise 2.2
 # Perform a GET call to https://restful-booker.herokuapp.com/booking/7
 # Extract the JSON body from the response
-# Assert that the value of the response body element 'lastname' is 'Brown'
-def test_get_booking_with_id_7_check_lastname_equals_brown():
+# Assert that the value of the response body element 'additionalneeds' is 'Breakfast'
+def test_get_booking_with_id_7_check_additionalneeds_equals_breakfast():
     pass
 
 
