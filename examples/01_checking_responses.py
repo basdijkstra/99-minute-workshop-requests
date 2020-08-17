@@ -21,6 +21,11 @@ def test_get_user_with_id_1_check_encoding_equals_utf8():
     assert response.encoding == 'utf-8'
 
 
+def test_get_user_with_id_1_check_server_header_exists():
+    response = requests.get('https://jsonplaceholder.typicode.com/users/1')
+    assert 'Server' in response.headers
+
+
 def test_get_user_with_id_1_check_server_header_equals_cloudflare():
     response = requests.get('https://jsonplaceholder.typicode.com/users/1')
     assert response.headers['Server'] == 'cloudflare'
